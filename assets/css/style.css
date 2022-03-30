@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yellowtail&display=swap');
 /* font-family: 'Yellowtail', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+/* font-family: 'Poppins', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 /* font-family: 'Lato', sans-serif; */
 /* utilities */
@@ -363,9 +365,9 @@ a {
 #hero .container .hero-title {
   color: #fff;
   font-weight: 600;
-  font-size: 5.5rem;
+  font-size: 3.5rem;
   /* font-family: 'Yellowtail', cursive; */
-  font-family: 'Yellowtail', cursive;
+  font-family: 'Poppins', sans-serif;
 }
 #hero .hero-subtitle {
   font-size: 2.5rem;
