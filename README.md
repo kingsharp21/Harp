@@ -5,7 +5,7 @@
 ### 🚥 About
 Built with passion!! 
 website is still under contraction. But you can check it out
-🔌 **Live Website Link**: <a href="kingsharp.netlify.app/">kingsharp.netlify.app</a>
+🔌 **Live Website Link**: <a href="https://kingsharp.netlify.app/">https://kingsharp.netlify.app/</a>
 
 ---
 
