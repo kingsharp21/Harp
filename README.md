@@ -14,7 +14,7 @@ website is still under contraction. But you can check it out
   <img width="35%" src="https://media.giphy.com/media/PTtX4JOSB76zo2iVCw/giphy.gif" />
   </p>
 - 📱 **Projects view** : <p align="center">
-  <img width="35%" src=" />
+  <img width="35%" src="https://media.giphy.com/media/egomJNbJXlUEvzrlxe/giphy.gif" />
   </p>
 ---
 
