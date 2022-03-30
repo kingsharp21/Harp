@@ -4,8 +4,8 @@
 
 ### 🚥 About
 Built with passion
-
-🔌 **Live Website Link**: <a href="https://kingsharp21.github.io/Harp.dev.github.io/">https://Harp.dev</a>
+website is still under contraction. But you can check it out
+🔌 **Live Website Link**: <a href="https://kingsharp21.github.io/Harp/">https://Harp.dev</a>
 
 ---
 
