@@ -25,7 +25,8 @@ body {
   background-color: var(--background-color);
   color: #ffffff;
   overflow-x: hidden;
-  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  /* font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+  font-family:"Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
   margin: 0px;
   width: 100%;
   min-height: 100%;
@@ -37,11 +38,6 @@ body {
 }
 .hidden{
   display: none;
-}
-h1,h2,h3,h4,h5,h6,p,span{
-  /* word-spacing:1px; */
-  /* letter-spacing: 1px; */
-  /* line-height: normal; */
 }
 p{
   display: block;
@@ -93,6 +89,12 @@ ul {
     margin-left: 20px;
     background-color: rgb(255, 255, 255);
   }
+}
+.btn{
+  padding: .5rem;
+  border: 2px solid var(--link-color);
+  color: var(--link-color);
+  transition: .5s all linear;
 }
 
 li{
@@ -211,73 +213,74 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 104px;
+  height: 74px;
   width: 100%;
   position: absolute;
-  padding:  0 6rem;
   /* background-color:white; */
 }
-#header .container{
-  /* max-width: 1200px; */
-  padding:1rem 0 ;
-  width: 100%;
-  margin: 0 auto;
-  height: 100%; 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* background-color: brown; */
+#header .nav-list{
+  margin: 0;
 }
-#header .container img{
-  width: 50px;
+#header .nav-list a col{
+  padding: 0;
+}
+#header .nav-list li{
+  padding: 10px;
+  color: #f9ed8a;
+}
+#header .nav-list li span{
+  padding-left: .4rem;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+#header .nav-list li span:hover{
+  color: #f9ed8a;
 }
 #header .logo {
-  /* font-size: 28px; */
   margin: 0;
   padding: 0;
-  width:4rem !important;
-  height:4rem;
+  width:60px!important;
+  height:60px;
   z-index: 1;
   background-color: var(--background-color-2);
   border-radius:50%;
 }
-#header .logo a {
-  color: #fff;
-}
 .menu-btn{
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  background-color: #f9ed8a;
   /* border:2.5px solid rgb(255, 255, 255); */
 }
 .toogle-menu{
-  width:30px;
-  height:5px;
+  width:60px;
+  height:2px;
   border-radius:5px;
   background-color:white;
   transition: all 0.5s ease-in-out;
   z-index: 1;
+  
 }
 .toogle-menu::after,
 .toogle-menu::before{
   content:"";
-  width:50px;
-  height:5px;
+  width:60px;
+  height:2px;
   border-radius:5px;
-  position: absolute;
   background-color:white;
-  transition: all 0.5s ease-in-out;
-
+  /* transition: all 0.5s ease-in-out; */
+  position: absolute;
 }
 .toogle-menu::after{
   transform: translateY(16px);
   /* width: 20px; */
-  width:20px;
+  /* width:20px; */
 }
 .toogle-menu::before{
   transform: translateY(-16px);
@@ -336,7 +339,7 @@ a {
 /*------------------------- Header section madia queries------------------------- */
 @media (max-width:880PX) {
   #header {
-    padding: 4rem 1rem;
+    padding: 0rem 1rem;
   }
 }
 
@@ -344,29 +347,24 @@ a {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  /* height: calc(100vh - 80px); */
-  height: 100vh;
+  height: calc(100vh - 80px);
+  /* height: 100vh; */
   color: #fff;
-  background-attachment:scroll;
   width: 100%;
-  /* background-color: #000000; */
-
 }
 #hero .container{
-  max-width: 1200px;
   margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background-color: #f9ed8a; */
 }
 #hero .container .hero-title {
   color: #fff;
-  font-weight: 600;
-  font-size: 3.5rem;
-  /* font-family: 'Yellowtail', cursive; */
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Yellowtail', cursive;
   font-family: 'Poppins', sans-serif;
 }
 #hero .hero-subtitle {
