@@ -25,11 +25,11 @@ function ArtiseCard({image, name, index, followers,mainId, spotifyId, navigation
     return ( 
         <TouchableOpacity style={styles.artiseCard} key={index} onPress={()=>{navigation.navigate('view',{'image': image, 'artise':name, 'spotiyId':spotifyId, 'mainId':mainId, 'followers':followers})}}>
            
-            <Animated.Image
+            <Image
                 source={{ uri: `${image}` }}
-                style={{ width: 80, height: 80, borderRadius: 50 }}
-                sharedTransitionTag="tag"
-                sharedTransitionStyle={customTransition}
+                style={{ width: 70, height: 70, borderRadius: 50 }}
+                // sharedTransitionTag="tag"
+                // sharedTransitionStyle={customTransition}
             />
             {/* <Image
                 source={{ uri: `${image}` }}

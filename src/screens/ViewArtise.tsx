@@ -36,10 +36,10 @@ function ViewArtise({route, navigation}) {
                 </View>
                 
             
-                <Animated.Image
+                <Image
                     source={{ uri: `${image}` }}
                     style={{ width: '100%', height: '100%' }}
-                    sharedTransitionTag="tag"
+                    // sharedTransitionTag="tag"
                 />
                 <View style={styles.imgText}>
                         <Text style={{ fontSize:40,  color:'white', fontWeight:'700', marginBottom:5 }}>{artise} <MaterialIcons name="verified" size={25} color="#A7C7E7" /></Text>

@@ -3,27 +3,23 @@ import { StyleSheet, Text, View, Button, Alert, TouchableOpacity, Image } from '
 import Buttons from '../../components/Buttons';
 
 
+
 export default function Intro({navigation}) {
   return (
     <>
     <View style={styles.container}>
-      {/* <View style={styles.logo}>
-        <Text style={styles.logo_text}>Harp</Text>
-      </View> */}
-      <View style={styles.homeImage}>
-        <Image source={require('../../assets/img/girlW.jpeg')} style={{width: '100%', height: '100%'}}/>
-      </View>
+          <View style={styles.middleSection}>
+            <Image style={{ height:100, width:100,}} source={require("../../assets/img/worchit-logo.png")}/>
+            {/* <Image style={{ height:100, width:100 }} source={require("../../assets/img/block 1.png")}/> */}
+            <Text style={styles.worchitText}>WORCH<Text style={{ color:'#FFE715' }}>IT</Text></Text>
+          </View>
 
-      <View style={styles.text_container}>
-        <Text style={styles.large_text}>The Future</Text>
-        <Text style={styles.large_text}>of The Creative</Text>
-        <Text style={styles.large_text}>Economy</Text>
-        <Buttons title='Get Started' onPress={() => navigation.navigate('SignInPage')}/>
-      </View>
-      
-      
-      
+          <View style={styles.getStarted}>
+              <Text style={{ fontSize:40, color:'white',fontWeight:'600', marginBottom:10 }}>Welcome to Worchit</Text>
+              <Text style={{ fontSize:20, color:'white', }}>Cina nkoa!!</Text>
 
+              <Buttons title='Get Started' onPress={() => navigation.navigate('SignInPage')}/>
+          </View>
     </View>
     </>
     
@@ -34,45 +30,34 @@ export default function Intro({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#141319',
+    backgroundColor: '#000000',
     alignItems: 'center',
-    // justifyContent: 's',
-    color:'white'
+    justifyContent:'space-around',
+    color:'white',
+    padding:5,
+    paddingTop:200
   },
-  logo:{
-    height: '30%',
-    width:'100%',
+  middleSection: {
     alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text_container:{
+    justifyContent:'center',
     // backgroundColor:'red',
-    // height:'70%',
-    paddingTop:30,
-    // width:'100%'
-  },
-  logo_text:{
-    color:'#686779',
-    fontSize: 50,
-    textAlign: 'center',
-    fontWeight:'800',
-  },
-  large_text: {
-    color:'#686779',
-    fontSize: 50,
-    textAlign: 'center',
-    fontWeight:'800'
-  },
-  homeImage: {
-    backgroundColor:'#24242e',
-    // backgroundColor:'#40902e',
-    alignSelf:'flex-end',
-    height: '50%',
     width:'100%',
-    paddingTop:50,
-    // paddingBottom:20 
+    // height:'70%'
+    // height:200
+  },
+  worchitText: {
+    color:'white',
+    fontSize:45,
+    marginTop:10
+  },
+  getStarted:{
+    // backgroundColor:'red',
+    alignItems: 'center',
+    justifyContent:'center',
+    marginBottom:25,
+    width:'100%'
     // position:'absolute',
-    // bottom:0
+    // bottom:15,
 
   }
 });
